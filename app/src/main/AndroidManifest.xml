@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -10,10 +12,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.UsahaMaju"
+        android:theme="@style/Theme.Material3.Light"
         tools:targetApi="31">
         <activity
             android:name=".ui.NotifScreen"
+
             android:exported="false" />
         <activity
             android:name=".ui.LikeScreen"
@@ -23,9 +26,11 @@
             android:exported="false" />
         <activity
             android:name=".ui.HomeScreen"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
         <activity
             android:name=".ui.RegisterScreen"
+
             android:exported="false" />
         <activity
             android:name=".ui.SplashScreen"
@@ -39,6 +44,7 @@
         </activity>
         <activity
             android:name=".ui.LoginScreen"
+            android:theme="@style/Theme.Material3.Light.NoActionBar"
             android:exported="true" />
     </application>
 

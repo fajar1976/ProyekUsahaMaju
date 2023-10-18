@@ -21,7 +21,7 @@
             android:layout_gravity="center"
             >
 
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:padding="10dp"
@@ -33,7 +33,7 @@
 
                 />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:background="@drawable/chaticon"
@@ -41,7 +41,7 @@
 
                 />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:background="@drawable/charticon"
@@ -117,7 +117,7 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="359dp"
             android:layout_height="114dp"
             android:background="@drawable/bt_warung"
@@ -129,7 +129,7 @@
             android:paddingRight="30dp"
             />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="359dp"
             android:layout_height="114dp"
             android:background="@drawable/bt_makanan"

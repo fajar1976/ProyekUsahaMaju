@@ -38,6 +38,7 @@
             />
 
         <EditText
+            android:id="@+id/emailEt"
             android:layout_marginTop="60dp"
             android:layout_gravity="center"
             android:layout_width="350dp"
@@ -52,6 +53,7 @@
             android:textSize="18sp" />
 
         <EditText
+            android:id="@+id/passEt"
             android:layout_marginTop="15dp"
             android:layout_gravity="center"
             android:layout_width="350dp"
@@ -79,7 +81,8 @@
 
             />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+
             android:id="@+id/btlogin"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
@@ -91,7 +94,8 @@
             android:textColor="@color/bg"
             android:textSize="14sp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -120,6 +124,7 @@
             />
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
