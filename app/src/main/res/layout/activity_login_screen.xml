@@ -109,7 +109,7 @@
             android:textColor="@color/black"
             />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"

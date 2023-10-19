@@ -30,12 +30,27 @@
 
 
         <EditText
-            android:id="@+id/emailEt"
+            android:id="@+id/namaEt"
             android:layout_marginTop="60dp"
             android:layout_gravity="center"
             android:layout_width="350dp"
             android:layout_height="50dp"
-            android:drawableStart="@drawable/emailicon"
+            android:drawableStart="@drawable/ic_person_outline"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Nama"
+            android:background="@drawable/bg_edittext"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:textColor="@color/textkolom"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:drawableStart="@drawable/ic_email_outline"
             android:fontFamily="@font/poppins_medium"
             android:hint="Email"
             android:background="@drawable/bg_edittext"
@@ -50,7 +65,7 @@
             android:layout_gravity="center"
             android:layout_width="350dp"
             android:layout_height="50dp"
-            android:drawableStart="@drawable/pwicon"
+            android:drawableStart="@drawable/ic_key_outline"
             android:drawableEnd="@drawable/hideicon"
             android:fontFamily="@font/poppins_medium"
             android:hint="Kata sandi"
@@ -66,10 +81,11 @@
             android:layout_gravity="center"
             android:layout_width="350dp"
             android:layout_height="50dp"
-            android:drawableStart="@drawable/pwicon"
+            android:drawableStart="@drawable/ic_key_outline"
             android:drawableEnd="@drawable/hideicon"
             android:fontFamily="@font/poppins_medium"
             android:hint="Konfirmasi kata sandi"
+
             android:background="@drawable/bg_edittext"
             android:drawablePadding="10dp"
             android:padding="10dp"
@@ -90,7 +106,7 @@
             android:textColor="@color/bg"
             />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -104,7 +120,7 @@
             android:textColor="@color/black"
             />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
