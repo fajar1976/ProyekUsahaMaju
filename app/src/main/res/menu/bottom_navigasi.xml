@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="Home"
+    <item android:title="Menu"
             android:id="@+id/home"
-        android:icon="@drawable/homeicon"
-        />
-    <item android:title="Disukai"
-        android:id="@+id/disukai"
-        android:icon="@drawable/disukaiicon"
+        android:icon="@drawable/menuicon"
         />
     <item android:title="Notifikasi"
         android:id="@+id/notifikasi"
         android:icon="@drawable/notificon"
         />
-    <item android:title="Menu"
+
+    <item android:title=""
+        android:id="@+id/fab"
+        android:enabled="false"
+        />
+
+    <item android:title="Disukai"
+        android:id="@+id/disukai"
+        android:icon="@drawable/disukaiicon"
+        />
+    <item android:title="Pesan"
         android:id="@+id/menu"
-        android:icon="@drawable/menuicon"
+        android:icon="@drawable/chaticon"
         />
 </menu>
