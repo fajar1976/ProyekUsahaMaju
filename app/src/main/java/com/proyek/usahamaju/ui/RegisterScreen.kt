@@ -1,10 +1,10 @@
 package com.proyek.usahamaju.ui
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
@@ -15,7 +15,12 @@ class RegisterScreen : AppCompatActivity() {
     private lateinit var binding:ActivityRegisterScreenBinding
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var firebaseDatabase : FirebaseDatabase
-    private val emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\\\.+[a-z]+"
+    private val emailPattern = ("^(([\\w-]+\\.)+[\\w-]+|([a-zA-Z]|[\\w-]{2,}))@"
+            + "((([0-1]?[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\.([0-1]?"
+            + "[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\."
+            + "([0-1]?[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\.([0-1]?"
+            + "[0-9]{1,2}|25[0-5]|2[0-4][0-9]))|"
+            + "([a-zA-Z]+[\\w-]+\\.)+[a-zA-Z]{2,4})$")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterScreenBinding.inflate(layoutInflater)
@@ -49,13 +54,13 @@ class RegisterScreen : AppCompatActivity() {
 //                    signUpNama.error = "Masukan Nama"
 //                }
 //                if(email.isEmpty()){
-//                    signUpNama.error = "Masukan Email"
+//                    signUpEmail.error = "Masukan Email"
 //                }
 //                if(pass.isEmpty()){
-//                    signUpNama.error = "Masukan Kata Sandi"
+//                    signUpPass.error = "Masukan Kata Sandi"
 //                }
 //                if(confPass.isEmpty()){
-//                    signUpNama.error = "Masukan Konfirmasi Kata Sandi"
+//                    signUpConfPass.error = "Masukan Konfirmasi Kata Sandi"
 //                }
 //                Toast.makeText(this,"Masukan Data valid", Toast.LENGTH_SHORT).show()
 //
