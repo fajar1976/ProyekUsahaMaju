@@ -50,8 +50,8 @@ dependencies {
 
     //simmer recycler view
 
-    implementation ("com.facebook.shimmer:shimmer:0.5.0")
-    implementation ("com.todkars:shimmer-recyclerview:0.4.1")
+//    implementation ("com.facebook.shimmer:shimmer:0.5.0")
+//    implementation ("com.todkars:shimmer-recyclerview:0.4.1")
 
 
     implementation("androidx.core:core-ktx:1.9.0")
