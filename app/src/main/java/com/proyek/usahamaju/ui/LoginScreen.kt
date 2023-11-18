@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.proyek.usahamaju.MainActivity
 import com.proyek.usahamaju.R
 import com.proyek.usahamaju.databinding.ActivityLoginScreenBinding
 
@@ -34,7 +35,7 @@ class LoginScreen : AppCompatActivity() {
             if (email.isNotEmpty() && pass.isNotEmpty()){
                 firebaseAuth.signInWithEmailAndPassword(email,pass).addOnCompleteListener{
                     if(it.isSuccessful){
-                        val intent = Intent(this,HomeScreen::class.java)
+                        val intent = Intent(this,MainActivity::class.java)
                         startActivity(intent)
                     }else{
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()

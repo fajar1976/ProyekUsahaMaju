@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="Menu"
-            android:id="@+id/home"
-        android:icon="@drawable/menuicon"
-        />
-    <item android:title="Notifikasi"
-        android:id="@+id/notifikasi"
-        android:icon="@drawable/notificon"
-        />
 
+    <item android:title="umPay"
+        android:id="@+id/Bottom_Pay"
+        android:icon="@drawable/ic_home"
+        />
+    <item android:title="Chart"
+        android:id="@+id/Bottom_Keranjang"
+        android:icon="@drawable/ic_notifikasi"
+        />
     <item android:title=""
         android:id="@+id/fab"
         android:enabled="false"
         />
-
-    <item android:title="Disukai"
-        android:id="@+id/disukai"
-        android:icon="@drawable/disukaiicon"
+    <item android:title="favorit"
+        android:id="@+id/Bottom_Favorite"
+        android:icon="@drawable/ic_chat"
         />
-    <item android:title="Pesan"
-        android:id="@+id/menu"
-        android:icon="@drawable/chaticon"
+    <item android:title="Menu"
+        android:id="@+id/Bottom_Menu"
+        android:icon="@drawable/ic_menu"
         />
 </menu>

@@ -6,136 +6,127 @@
     android:layout_height="match_parent"
     tools:context=".ui.LoginScreen"
     android:orientation="vertical"
-    android:background="@color/redlogo">
+    android:background="@color/background">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="MASUK"
-        android:textSize="28dp"
-        android:gravity="center"
-        android:fontFamily="@font/poppins_semibold"
-        android:letterSpacing="0.20"
-        android:textColor="@color/white"
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/siumlogo"
+        android:layout_marginTop="36dp"
         />
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@drawable/borderlogin"
-        android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:layout_marginLeft="40dp"
+        android:text="Masuk"
+        android:textSize="18sp"
+        android:gravity="left"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/HitamS"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="Belum punya akun? Daftar"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:gravity="left"
 
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:src="@drawable/logoum"
-            android:layout_marginTop="40dp"
-            />
+        />
 
-        <EditText
-            android:id="@+id/emailEt"
-            android:layout_marginTop="60dp"
-            android:layout_gravity="center"
-            android:layout_width="350dp"
-            android:layout_height="50dp"
-            android:drawableStart="@drawable/emailicon"
-            android:fontFamily="@font/poppins_medium"
-            android:hint="Email"
-            android:background="@drawable/bg_edittext"
-            android:drawablePadding="10dp"
-            android:padding="10dp"
-            android:textColor="@color/textkolom"
-            android:textSize="18sp" />
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:drawableStart="@drawable/ic_email_outline"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Email"
+        android:background="@drawable/bg_edittext"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:textColor="@color/textkolom"
+        android:textSize="12sp" />
 
-        <EditText
-            android:id="@+id/passEt"
-            android:layout_marginTop="15dp"
-            android:layout_gravity="center"
-            android:layout_width="350dp"
-            android:layout_height="50dp"
-            android:drawableStart="@drawable/pwicon"
-            android:drawableEnd="@drawable/hideicon"
-            android:fontFamily="@font/poppins_medium"
-            android:hint="Kata sandi"
-            android:background="@drawable/bg_edittext"
-            android:drawablePadding="10dp"
-            android:padding="10dp"
-            android:textColor="@color/textkolom"
-            android:textSize="18sp" />
+    <EditText
+        android:id="@+id/passEt"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:drawableStart="@drawable/pwicon"
+        android:drawableEnd="@drawable/hideicon"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Kata sandi"
+        android:background="@drawable/bg_edittext"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:textColor="@color/textkolom"
+        android:textSize="12sp" />
 
-        <TextView
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:text="Lupa Kata sandi?"
-            android:fontFamily="@font/poppins_regular"
-            android:textSize="12sp"
-            android:textColor="@color/black"
-            android:gravity="right"
-            android:layout_gravity="center"
+    <TextView
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Lupa Kata sandi?"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:gravity="right"
+        android:layout_gravity="center"
 
-            />
+        />
 
-        <androidx.appcompat.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
 
-            android:id="@+id/btlogin"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/bg_masuk"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="MASUK"
-            android:textColor="@color/bg"
-            android:textSize="14sp" />
+        android:id="@+id/btlogin"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_masuk"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="MASUK"
+        android:textColor="@color/bg"
+        android:textSize="14sp" />
 
-        <androidx.appcompat.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
 
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"
-            android:background="@drawable/bg_button"
-            android:drawableStart="@drawable/googleicon"
-            android:paddingStart="16dp"
-            android:text="Masuk menggunakan google"
-            android:fontFamily="@font/poppins_semibold"
-            android:textSize="14sp"
-            android:textColor="@color/black"
-            />
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_button"
+        android:drawableStart="@drawable/googleicon"
+        android:paddingStart="16dp"
+        android:text="Masuk menggunakan google"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"
-            android:background="@drawable/bg_button"
-            android:drawableStart="@drawable/fbicon"
-            android:paddingStart="16dp"
-            android:text="Masuk menggunakan facebook"
-            android:fontFamily="@font/poppins_semibold"
-            android:textSize="14sp"
-            android:textColor="@color/black"
-            />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_button"
+        android:drawableStart="@drawable/fbicon"
+        android:paddingStart="16dp"
+        android:text="Masuk menggunakan facebook"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="Belum punya akun? Daftar"
-            android:fontFamily="@font/poppins_regular"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            android:gravity="center"
-            android:layout_gravity="center"
-
-            />
-
-    </LinearLayout>
 </LinearLayout>

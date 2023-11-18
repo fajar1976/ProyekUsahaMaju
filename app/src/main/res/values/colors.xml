@@ -6,4 +6,11 @@
     <color name="bg">#E4E4E4</color>
     <color name="bayangan">#D1888B</color>
     <color name="textkolom">#7C7C7C</color>
+
+    <!--    warna fix -->
+    <color name="background">#FCE9D4</color>
+    <color name="HijauT">#658E57</color>
+    <color name="HijauM">#B4C375</color>
+    <color name="Coklat">#AD7D59</color>
+    <color name="HitamS">#312B2F</color>
 </resources>

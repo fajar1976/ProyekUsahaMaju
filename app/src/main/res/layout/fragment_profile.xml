@@ -3,12 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".notifikasi_fragment">
+    tools:context=".nav_fragment.ProfileFragment"
+    android:background="@color/background">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:text="Profile"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textColor="@color/HijauT"
+        android:fontFamily="@font/poppins_extrabold"/>
 
 </FrameLayout>

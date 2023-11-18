@@ -6,17 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".ui.RegisterScreen"
     android:orientation="vertical"
-    android:background="@color/redlogo">
+    android:background="@color/HijauT">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="DAFTAR"
-        android:textSize="28dp"
+        android:layout_marginTop="25dp"
+        android:text="Jual Beli Produk UMKM Hanya di SIUM"
+        android:textSize="14sp"
         android:gravity="center"
         android:fontFamily="@font/poppins_semibold"
-        android:letterSpacing="0.20"
+        android:textColor="@color/background"
+        />
+
+    <TextView
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:text="Mari bergabung dan nikmati berbagai fitur  memudahkan anda bertransaksi di SIUM"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"
         android:textColor="@color/white"
         />
 
@@ -28,12 +40,35 @@
         android:background="@drawable/borderlogin"
         android:layout_marginTop="10dp">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:text="Ayo...Daftar Sekarang !"
+            android:textSize="18sp"
+            android:gravity="left"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/HitamS"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Sudah punya akun? Masuk "
+            android:textSize="12sp"
+            android:gravity="left"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/HitamS"
+            />
 
         <EditText
             android:id="@+id/namaEt"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:layout_width="350dp"
+            android:layout_width="328dp"
             android:layout_height="50dp"
             android:drawableStart="@drawable/ic_person_outline"
             android:fontFamily="@font/poppins_medium"
@@ -46,9 +81,9 @@
 
         <EditText
             android:id="@+id/emailEt"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="13dp"
             android:layout_gravity="center"
-            android:layout_width="350dp"
+            android:layout_width="328dp"
             android:layout_height="50dp"
             android:drawableStart="@drawable/ic_email_outline"
             android:fontFamily="@font/poppins_medium"
@@ -61,9 +96,9 @@
 
         <EditText
             android:id="@+id/passEt"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="13dp"
             android:layout_gravity="center"
-            android:layout_width="350dp"
+            android:layout_width="328dp"
             android:layout_height="50dp"
             android:drawableStart="@drawable/ic_key_outline"
             android:drawableEnd="@drawable/hideicon"
@@ -77,9 +112,9 @@
 
         <EditText
             android:id="@+id/confpassEt"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="13dp"
             android:layout_gravity="center"
-            android:layout_width="350dp"
+            android:layout_width="328dp"
             android:layout_height="50dp"
             android:drawableStart="@drawable/ic_key_outline"
             android:drawableEnd="@drawable/hideicon"
@@ -95,7 +130,7 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonDaftar"
-            android:layout_width="350dp"
+            android:layout_width="328dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
@@ -107,7 +142,7 @@
             />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="350dp"
+            android:layout_width="328dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_gravity="center"
@@ -121,7 +156,7 @@
             />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="350dp"
+            android:layout_width="328dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_gravity="center"
@@ -134,18 +169,6 @@
             android:textColor="@color/black"
             />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="Sudah punya akun? Masuk"
-            android:fontFamily="@font/poppins_regular"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            android:gravity="center"
-            android:layout_gravity="center"
 
-            />
     </LinearLayout>
 </LinearLayout>
