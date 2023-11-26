@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         drawerLayout = findViewById(R.id.drawerLayout)
 
-        val navigationView = findViewById<NavigationView>(R.id.navigateView)
+        val navigationView = findViewById<NavigationView>(R.id.navigateView)0
         val header = navigationView.getHeaderView(0)
         val userNameTxt = header.findViewById<TextView>(R.id.userNameTxt)
         val emailTxt = header.findViewById<TextView>(R.id.emailTxt)
@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         /// Default Navigation bar Tab Selected
         replaceFragment(Homefragment())
-        navigationView.setCheckedItem(R.id.addFabHome)
+        navigationView.setCheckedItem(R.id.FabPengiriman)
 
         firebaseAuth = FirebaseAuth.getInstance()
 

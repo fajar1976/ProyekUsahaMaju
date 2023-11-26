@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.proyek.usahamaju.R
 import com.proyek.usahamaju.bottom_fragment.ChartFragment
 import com.proyek.usahamaju.bottom_fragment.FavoriteFragment
@@ -20,7 +22,7 @@ class Homefragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val view = inflater.inflate(R.layout.fragment_homefragment, container, false)
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
 
         val bottomNavigationView = view.findViewById<BottomNavigationView>(R.id.bottomNavigation)
         bottomNavigationView.setOnItemSelectedListener{
@@ -44,10 +46,12 @@ class Homefragment : Fragment() {
             }
             true
         }
-        replaceFragment(Homefragment())
-        activity?.title = "Home"
-        bottomNavigationView.selectedItemId = R.id.addFabHome
 
+
+        val addFab = view.findViewById<FloatingActionButton>(R.id.FabPengiriman)
+        addFab.setOnClickListener{
+            Toast.makeText(context,"Tombol Home Diklik",Toast.LENGTH_LONG).show()
+        }
 
         return view
     }
