@@ -3,17 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".nav_fragment.ProfileFragment"
-    android:background="@color/background">
+    android:background="@color/background"
+    tools:context=".fragments.KeranjangFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/HijauT"
+        android:textSize="32sp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Profile"
-        android:gravity="center"
-        android:textSize="32sp"
-        android:textColor="@color/HijauT"
-        android:fontFamily="@font/poppins_extrabold"/>
+        android:text="Keranjang" />
 
 </FrameLayout>

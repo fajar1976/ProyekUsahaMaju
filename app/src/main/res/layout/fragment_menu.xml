@@ -3,16 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".bottom_fragment.MenuFragment">
+    android:background="@color/background"
+    tools:context=".fragments.MenuFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/HijauT"
+        android:textSize="32sp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Menu"
-        android:gravity="center"
-        android:textSize="32sp"
-        android:textColor="@color/HijauT"
-        android:fontFamily="@font/poppins_extrabold"/>
+        android:text="Menu" />
 
 </FrameLayout>
