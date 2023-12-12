@@ -4,6 +4,7 @@
         android:height="120dp"
         android:width="370dp"
         />
+
     <solid
         android:color="@color/HijauT"
         />
